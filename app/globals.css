@@ -9,5 +9,4 @@
   --sand:#F6F4EF;
   --ink:#0F172A;
 }
-
 html,body{ height:100%; background:var(--sand); color:var(--ink); }
