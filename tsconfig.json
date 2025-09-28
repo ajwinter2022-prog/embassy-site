@@ -29,6 +29,9 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "types": ["vitest/globals", "@testing-library/jest-dom"],
+	"baseUrl": ".",
+	"paths": { "@/*": ["./*"] }
+
 
     "baseUrl": ".",                       ← add this
     "paths": { "@/*": ["./*"] }           ← and this
@@ -36,3 +39,4 @@
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules"]
 }
+
