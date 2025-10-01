@@ -2,7 +2,7 @@ backend:
   name: github
   repo: ajwinter2022-prog/embassy-site
   branch: main
-  base_url: https://embassytalent.io    # our OAuth proxy lives under /api
+  base_url: https://embassytalent.io
   auth_endpoint: /api/auth
 
 media_folder: "public/uploads"
