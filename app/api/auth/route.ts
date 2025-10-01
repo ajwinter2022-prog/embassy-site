@@ -16,7 +16,7 @@ export async function GET(req: Request) {
   const host = h.get('x-forwarded-host') ?? h.get('host') ?? 'embassytalent.io';
   const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? `${proto}://${host}`;
 
-const clientId = process.env.GITHUB_CLIENT_ID || 'PASTE_YOUR_GITHUB_CLIENT_ID_HERE';
+const clientId = process.env.GITHUB_CLIENT_ID || 'Ov23ct6GYUVmZN06WV2R';
   const scope = url.searchParams.get('scope') ?? 'repo';
   const redirectUri = `${siteUrl}/api/auth/callback`;
 
