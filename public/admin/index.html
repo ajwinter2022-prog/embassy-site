@@ -1,78 +1,88 @@
-<!doctype html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="robots" content="noindex" />
-    <title>Embassy Admin</title>
-  </head>
-  <body>
-    <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
-    <script>
-      // Tell Decap not to fetch /admin/config.yml
-      window.CMS_MANUAL_INIT = true;
-
-      const config = {
-        backend: {
-          name: "github",
-          repo: "ajwinter2022-prog/embassy-site",
-          branch: "main",
-          base_url: "https://embassytalent.io",
-          auth_endpoint: "/api/auth"
-        },
-        media_folder: "public/uploads",
-        public_folder: "/uploads",
-        publish_mode: "editorial_workflow",
-        collections: [
-          {
-            name: "site",
-            label: "Site Content",
-            files: [
-              {
-                file: "content/home.json",
-                name: "home",
-                label: "Homepage",
-                fields: [
-                  {
-                    label: "Hero",
-                    name: "hero",
-                    widget: "object",
-                    fields: [
-                      { label: "Eyebrow",  name: "eyebrow",  widget: "string" },
-                      { label: "Headline", name: "headline", widget: "text" },
-                      { label: "CTA Label", name: "ctaLabel", widget: "string" },
-                      { label: "CTA Link",  name: "ctaHref",  widget: "string", default: "#contact" }
-                    ]
-                  },
-                  {
-                    label: "Services",
-                    name: "services",
-                    widget: "list",
-                    summary: "{{fields.title}}",
-                    fields: [
-                      { label: "Title",       name: "title",  widget: "string" },
-                      { label: "Description", name: "desc",   widget: "text" },
-                      { label: "Bullets",     name: "bullets", widget: "list",
-                        field: { label: "Bullet", name: "bullet", widget: "string" } }
-                    ]
-                  },
-                  {
-                    label: "Contact",
-                    name: "contact",
-                    widget: "object",
-                    fields: [
-                      { label: "Email",    name: "email",    widget: "string" },
-                      { label: "Phone",    name: "phone",    widget: "string" },
-                      { label: "Locations",name: "locations",widget: "string" }
-                    ]
-                  }
-                ]
-              }
-            ]
-          }
-        ]
-      };
-
-      CMS.init({ config });
-    </script>
-  </body>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2566">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!doctype html&gt;</p>
+<p class="p1">&lt;html&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta charset="utf-8" /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta name="robots" content="noindex" /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;title&gt;Embassy Admin&lt;/title&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;body&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- 1) Tell Decap not to auto-init --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>window.CMS_MANUAL_INIT = true;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/script&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- 2) Load Decap CMS --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"&gt;&lt;/script&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- 3) Manually init ONCE with our config --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>const config = {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>backend: {</p>
+<p class="p1"><span class="Apple-converted-space">          </span>name: "github",</p>
+<p class="p1"><span class="Apple-converted-space">          </span>repo: "ajwinter2022-prog/embassy-site",</p>
+<p class="p1"><span class="Apple-converted-space">          </span>branch: "main",</p>
+<p class="p1"><span class="Apple-converted-space">          </span>base_url: "https://embassytalent.io",</p>
+<p class="p1"><span class="Apple-converted-space">          </span>auth_endpoint: "/api/auth"</p>
+<p class="p1"><span class="Apple-converted-space">        </span>},</p>
+<p class="p1"><span class="Apple-converted-space">        </span>media_folder: "public/uploads",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>public_folder: "/uploads",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>publish_mode: "editorial_workflow",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>collections: [</p>
+<p class="p1"><span class="Apple-converted-space">          </span>{</p>
+<p class="p1"><span class="Apple-converted-space">            </span>name: "site",</p>
+<p class="p1"><span class="Apple-converted-space">            </span>label: "Site Content",</p>
+<p class="p1"><span class="Apple-converted-space">            </span>files: [</p>
+<p class="p1"><span class="Apple-converted-space">              </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                </span>file: "content/home.json",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>name: "home",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>label: "Homepage",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>fields: [</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>{ label: "Hero", name: "hero", widget: "object", fields: [</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>{ label: "Eyebrow",<span class="Apple-converted-space">  </span>name: "eyebrow",<span class="Apple-converted-space">  </span>widget: "string" },</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>{ label: "Headline", name: "headline", widget: "text" },</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>{ label: "CTA Label", name: "ctaLabel", widget: "string" },</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>{ label: "CTA Link",<span class="Apple-converted-space">  </span>name: "ctaHref",<span class="Apple-converted-space">  </span>widget: "string", default: "#contact" }</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>]},</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>{ label: "Services", name: "services", widget: "list", summary: "{{fields.title}}", fields: [</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>{ label: "Title", name: "title", widget: "string" },</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>{ label: "Description", name: "desc", widget: "text" },</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>{ label: "Bullets", name: "bullets", widget: "list",</p>
+<p class="p1"><span class="Apple-converted-space">                      </span>field: { label: "Bullet", name: "bullet", widget: "string" } }</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>]},</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>{ label: "Contact", name: "contact", widget: "object", fields: [</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>{ label: "Email", name: "email", widget: "string" },</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>{ label: "Phone", name: "phone", widget: "string" },</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>{ label: "Locations", name: "locations", widget: "string" }</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>]}</p>
+<p class="p1"><span class="Apple-converted-space">                </span>]</p>
+<p class="p1"><span class="Apple-converted-space">              </span>}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>]</p>
+<p class="p1"><span class="Apple-converted-space">          </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>]</p>
+<p class="p1"><span class="Apple-converted-space">      </span>};</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>// Start CMS once the script is loaded</p>
+<p class="p1"><span class="Apple-converted-space">      </span>window.addEventListener('load', function () {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>if (window.CMS &amp;&amp; typeof window.CMS.init === 'function') {</p>
+<p class="p1"><span class="Apple-converted-space">          </span>window.CMS.init({ config });</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">      </span>});</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
 </html>
