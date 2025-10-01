@@ -19,7 +19,7 @@ export async function GET(req: Request) {
   const redirectUri = `${siteUrl}/api/auth/callback`;
 
   // TEMP: paste your real Client ID here until env var is confirmed working
-  const clientId = process.env.GITHUB_CLIENT_ID || 'YOUR_REAL_CLIENT_ID_HERE';
+  const clientId = process.env.GITHUB_CLIENT_ID || 'Ov23ct6GYUVmZN06WV2R';
 
   const scope = url.searchParams.get('scope') ?? 'repo';
 
