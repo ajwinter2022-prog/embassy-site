@@ -1,0 +1,30 @@
+{
+  "hero": {
+    "eyebrow": "Influencer & Talent Agency",
+    "headline": "Direct-response creative with taste. Talent that actually moves product.",
+    "ctaLabel": "Start a pilot sprint",
+    "ctaHref": "#contact"
+  },
+  "services": [
+    {
+      "title": "Campaign Strategy",
+      "desc": "Creative angles, hooks, and briefs that convert across TikTok, Reels, and Shorts.",
+      "bullets": ["Concepting + copy pack", "UGC + influencer mix", "Attribution + pixel plan"]
+    },
+    {
+      "title": "Talent Sourcing",
+      "desc": "Shortlists across niches with performance data, not vibes.",
+      "bullets": ["Roster + open market", "Usage/whitelist ready", "Brand fit filtering"]
+    },
+    {
+      "title": "Production",
+      "desc": "Casting, shoots, editing, and QC at creator speed.",
+      "bullets": ["Creator toolkits", "On-site or remote", "24–72h turnarounds"]
+    }
+  ],
+  "contact": {
+    "email": "hello@embassytalent.io",
+    "phone": "(305) 555-0199",
+    "locations": "Miami • New York • Remote"
+  }
+}
